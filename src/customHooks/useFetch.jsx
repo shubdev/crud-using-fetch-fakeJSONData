@@ -68,7 +68,7 @@ export const useFetch = (url) => {
         alert("post deleted successfull");
     }
     // return { data: data, loading: loading, error: error }
-    return { allPost, loading, error, setLoading, setAllPost, createPost, updatePost, deletePost } //-- > we cam call like thiss as well cos the object names are same.
+    return { allPost, loading, error, setLoading, setAllPost, createPost, updatePost, deletePost } //-- > we can call like thiss as well cos the object names are same.
 
 }
 
