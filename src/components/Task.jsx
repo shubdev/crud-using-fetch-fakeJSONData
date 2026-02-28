@@ -9,12 +9,13 @@ const Task = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (formData.id) {
+        if (formData.id) {  //taking form id and  updating the post.
             updatePost(formData)
             return
         }
         createPost(formData)
     }
+
 
     return (
         <>
