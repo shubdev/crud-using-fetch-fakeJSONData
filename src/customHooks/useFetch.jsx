@@ -40,7 +40,7 @@ export const useFetch = (url) => {
             })
             let newPost = await response.json()
             setAllPost((prev) => [newPost, ...prev])     // Add new post at the beginning
-            setFormData({ title: "", body: "" })
+            setFormData({ title: "", body: ""})
             // alert(`Post created successfully! ID: ${newPost.id}`);
 
         } catch (error) {
@@ -68,7 +68,7 @@ export const useFetch = (url) => {
         alert("post deleted successfull");
     }
     // return { data: data, loading: loading, error: error }
-    return { allPost, loading, error, setLoading, setAllPost, createPost, updatePost, deletePost } //-- > we can call like thiss as well cos the object names are same.
+    return { allPost, loading, setLoading, createPost, updatePost, deletePost, setAllPost } //-- > we can call like thiss as well cos the object names are same.
 
 }
 
